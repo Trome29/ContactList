@@ -13,7 +13,6 @@ class ContactTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 40
     }
 }
 
@@ -36,7 +35,9 @@ extension ContactTableViewController {
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        let contactDataVC = segue.destination as? ContactDataViewController
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        contactDataVC?.person = personList[indexPath.row]
     }
 
 }
