@@ -12,9 +12,7 @@ class ContactTableViewController: UITableViewController {
     var personsList = Person.getPersonsList()
     
     // MARK: - Navigation
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         guard let contactDataVC = segue.destination as? ContactDataViewController else { return }
         contactDataVC.person = personsList[indexPath.row]

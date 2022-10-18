@@ -9,19 +9,19 @@ import UIKit
 
 class ContactListTableViewController: UITableViewController {
     
-    var personsList: [Person] = []
-    //var personsList = Person.getPersonsList()
+    private var personsList: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
-        
         guard let contactListVC = tabBarController?.viewControllers?.first as? ContactTableViewController else { return }
         personsList = contactListVC.personsList
-        
     }
+}
+
+// MARK: - UITableViewDataSource
+extension ContactListTableViewController {
     
-    // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         personsList.count
     }
@@ -43,10 +43,9 @@ class ContactListTableViewController: UITableViewController {
             content.text = person.email
             content.image = UIImage(named: "email")
         }
+        
         content.imageProperties.cornerRadius = tableView.rowHeight / 2
-        
         cell.contentConfiguration = content
-        
         return cell
     }
     

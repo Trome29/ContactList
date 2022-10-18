@@ -9,7 +9,6 @@ import UIKit
 
 class ContactDataViewController: UIViewController {
     
-    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
     
@@ -17,7 +16,6 @@ class ContactDataViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         title = person.title
         phoneLabel.text = person.phoneNumber
         emailLabel.text = person.email
