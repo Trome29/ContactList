@@ -37,3 +37,7 @@ struct Person {
     }
 }
 
+enum Images: String {
+    case phone = "📞"
+    case email = "📧"
+}

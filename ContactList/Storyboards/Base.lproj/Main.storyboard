@@ -44,7 +44,7 @@
                             <outlet property="delegate" destination="xe8-Mh-SNZ" id="97A-51-eAX"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" id="m0d-eA-OeH"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person" catalog="system" id="m0d-eA-OeH"/>
                     <navigationItem key="navigationItem" title="Persons List" id="t3l-0p-mQm"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5L-YD-L6c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -155,6 +155,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="1YP-7S-H4Y"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BNF-gs-FWZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -176,7 +177,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personsList" textLabel="b2G-5r-kge" detailTextLabel="5VM-9H-Ntw" style="IBUITableViewCellStyleSubtitle" id="Nxc-Ug-O4M">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personsList" textLabel="b2G-5r-kge" style="IBUITableViewCellStyleDefault" id="Nxc-Ug-O4M">
                                 <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nxc-Ug-O4M" id="Y3Z-Dc-u0Q">
@@ -184,14 +185,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b2G-5r-kge">
-                                            <rect key="frame" x="16" y="6" width="25" height="14.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5VM-9H-Ntw">
-                                            <rect key="frame" x="16" y="22.5" width="33" height="14.5"/>
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
@@ -212,11 +206,11 @@
             </objects>
             <point key="canvasLocation" x="1868" y="287"/>
         </scene>
-        <!--Item-->
+        <!--Contacts-->
         <scene sceneID="W96-3a-Wal">
             <objects>
                 <navigationController id="d0r-yg-Ocu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="person.fill" catalog="system" id="6NC-Ir-iUB"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.fill" catalog="system" id="6NC-Ir-iUB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Bh-L2-Drf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

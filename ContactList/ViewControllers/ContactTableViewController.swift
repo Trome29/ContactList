@@ -9,19 +9,15 @@ import UIKit
 
 class ContactTableViewController: UITableViewController {
     
-    private var personsList = Person.getPersonsList()
-    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//    }
+    var personsList = Person.getPersonsList()
     
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = tableView.indexPathForSelectedRow {
-            guard let contactDataVC = segue.destination as? ContactDataViewController else { return }
-            contactDataVC.person = personsList[indexPath.row]
-        }
+        
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        guard let contactDataVC = segue.destination as? ContactDataViewController else { return }
+        contactDataVC.person = personsList[indexPath.row]
     }
 }
 
