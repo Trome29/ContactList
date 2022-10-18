@@ -14,6 +14,7 @@ class ContactListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 50
         
         guard let contactListVC = tabBarController?.viewControllers?.first as? ContactTableViewController else { return }
         personsList = contactListVC.personsList
@@ -37,11 +38,12 @@ class ContactListTableViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             content.text = person.phoneNumber
-            content.image = UIImage(named: Images.phone.rawValue)
+            content.image = UIImage(named: "phone")
         default:
             content.text = person.email
-            content.image = UIImage(named: Images.email.rawValue)
+            content.image = UIImage(named: "email")
         }
+        content.imageProperties.cornerRadius = tableView.rowHeight / 2
         
         cell.contentConfiguration = content
         

@@ -36,8 +36,3 @@ struct Person {
         return personsList
     }
 }
-
-enum Images: String {
-    case phone = "📞"
-    case email = "📧"
-}
