@@ -167,7 +167,7 @@
             </objects>
             <point key="canvasLocation" x="300" y="-81"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Contact Detail Table View Controller-->
         <scene sceneID="yOg-mZ-Bdq">
             <objects>
                 <tableViewController id="z8D-8F-8R7" customClass="ContactDetailTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -176,12 +176,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personsList" id="Nxc-Ug-O4M">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personsList" textLabel="b2G-5r-kge" detailTextLabel="5VM-9H-Ntw" style="IBUITableViewCellStyleSubtitle" id="Nxc-Ug-O4M">
                                 <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nxc-Ug-O4M" id="Y3Z-Dc-u0Q">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b2G-5r-kge">
+                                            <rect key="frame" x="16" y="6" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5VM-9H-Ntw">
+                                            <rect key="frame" x="16" y="22.5" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -190,7 +206,7 @@
                             <outlet property="delegate" destination="z8D-8F-8R7" id="7OF-TB-jNc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="yEe-oc-Yhu"/>
+                    <navigationItem key="navigationItem" id="yEe-oc-Yhu"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKj-h5-Uad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -201,8 +217,8 @@
             <objects>
                 <navigationController id="d0r-yg-Ocu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="person.fill" catalog="system" id="6NC-Ir-iUB"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="6Bh-L2-Drf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Bh-L2-Drf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

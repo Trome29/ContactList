@@ -13,7 +13,6 @@ class ContactDataViewController: UIViewController {
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
     
-    
     var person: Person!
     
     override func viewDidLoad() {
