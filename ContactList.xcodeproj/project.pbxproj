@@ -15,6 +15,8 @@
 		301A720C28FEDB8400F8C431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301A720A28FEDB8400F8C431 /* LaunchScreen.storyboard */; };
 		301A721428FEE1BD00F8C431 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A721328FEE1BD00F8C431 /* ContactTableViewController.swift */; };
 		301A721628FEE2BE00F8C431 /* ContactDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A721528FEE2BE00F8C431 /* ContactDetailTableViewController.swift */; };
+		301A721D28FEE49200F8C431 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A721C28FEE49200F8C431 /* Person.swift */; };
+		301A722028FEE59D00F8C431 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A721F28FEE59D00F8C431 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		301A720D28FEDB8400F8C431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		301A721328FEE1BD00F8C431 /* ContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
 		301A721528FEE2BE00F8C431 /* ContactDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailTableViewController.swift; sourceTree = "<group>"; };
+		301A721C28FEE49200F8C431 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		301A721F28FEE59D00F8C431 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			children = (
 				301A721B28FEE34000F8C431 /* Model */,
 				301A721728FEE30600F8C431 /* ViewControllers */,
+				301A721E28FEE58800F8C431 /* Services */,
 				301A721928FEE32D00F8C431 /* Storyboards */,
 				301A721828FEE31200F8C431 /* App */,
 				301A721A28FEE33500F8C431 /* Resources */,
@@ -109,8 +114,17 @@
 		301A721B28FEE34000F8C431 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				301A721C28FEE49200F8C431 /* Person.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		301A721E28FEE58800F8C431 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				301A721F28FEE59D00F8C431 /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301A722028FEE59D00F8C431 /* DataStore.swift in Sources */,
+				301A721D28FEE49200F8C431 /* Person.swift in Sources */,
 				301A721428FEE1BD00F8C431 /* ContactTableViewController.swift in Sources */,
 				301A720428FEDB8300F8C431 /* ContactDataViewController.swift in Sources */,
 				301A720028FEDB8300F8C431 /* AppDelegate.swift in Sources */,

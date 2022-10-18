@@ -8,14 +8,15 @@
 import UIKit
 
 class ContactTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+}
 
-    // MARK: - Table view data source
-
+// MARK: - UITableViewDataSource
+extension ContactTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }

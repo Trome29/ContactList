@@ -71,8 +71,8 @@
         <scene sceneID="rwg-mx-p1g">
             <objects>
                 <navigationController id="COe-90-Dbm" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K8x-yJ-lKV">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="K8x-yJ-lKV">
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -105,7 +105,7 @@
         <!--Root View Controller-->
         <scene sceneID="yOg-mZ-Bdq">
             <objects>
-                <tableViewController id="z8D-8F-8R7" sceneMemberID="viewController">
+                <tableViewController id="z8D-8F-8R7" customClass="ContactDetailTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6Eg-RI-59c">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,8 +136,8 @@
             <objects>
                 <navigationController id="d0r-yg-Ocu" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="person.fill" catalog="system" id="6NC-Ir-iUB"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Bh-L2-Drf">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="6Bh-L2-Drf">
+                        <rect key="frame" x="0.0" y="47" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
