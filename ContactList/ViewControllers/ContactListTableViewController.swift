@@ -7,19 +7,17 @@
 
 import UIKit
 
-class ContactDetailTableViewController: UITableViewController {
+class ContactListTableViewController: UITableViewController {
     
-    //var personList: [Person]!
-    var personList = Person.getPersonList()
+    var personsList: [Person] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//    }
 
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
-        personList.count
+        personsList.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,7 +27,7 @@ class ContactDetailTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personsList", for: indexPath)
         
-        let person = personList[indexPath.row]
+        let person = personsList[indexPath.row]
         var content = cell.defaultContentConfiguration()
         content.text = person.phoneNumber
         content.secondaryText = person.email
@@ -38,9 +36,7 @@ class ContactDetailTableViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection
-                                section: Int) -> String? {
-        return personList[section].title
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return personsList[section].title
     }
-
 }

@@ -17,11 +17,10 @@ class ContactDataViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         titleLabel.text = person.title
         phoneLabel.text = person.phoneNumber
         emailLabel.text = person.email
     }
-
-
 }
 

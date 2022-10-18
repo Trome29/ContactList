@@ -15,73 +15,25 @@ struct Person {
         "\(name) \(surname)"
     }
     
-    static func getPersonList() -> [Person] {
-        let data = DataStore()
-    
-        return [
-            Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                email: data.emails.randomElement() ?? "",
-                phoneNumber: data.phoneNumbers.randomElement() ?? ""),
-            Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                email: data.emails.randomElement() ?? "",
-                phoneNumber: data.phoneNumbers.randomElement() ?? ""),
-            Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                email: data.emails.randomElement() ?? "",
-                phoneNumber: data.phoneNumbers.randomElement() ?? ""),
-            Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                email: data.emails.randomElement() ?? "",
-                phoneNumber: data.phoneNumbers.randomElement() ?? ""),
-            Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                email: data.emails.randomElement() ?? "",
-                phoneNumber: data.phoneNumbers.randomElement() ?? ""),
-            Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                email: data.emails.randomElement() ?? "",
-                phoneNumber: data.phoneNumbers.randomElement() ?? ""),
-            Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                email: data.emails.randomElement() ?? "",
-                phoneNumber: data.phoneNumbers.randomElement() ?? ""),
-            Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                email: data.emails.randomElement() ?? "",
-                phoneNumber: data.phoneNumbers.randomElement() ?? ""),
-            Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                email: data.emails.randomElement() ?? "",
-                phoneNumber: data.phoneNumbers.randomElement() ?? ""),
-            Person(
-                name: data.names.randomElement() ?? "",
-                surname: data.surnames.randomElement() ?? "",
-                email: data.emails.randomElement() ?? "",
-                phoneNumber: data.phoneNumbers.randomElement() ?? "")
-        ]
+    static func getPersonsList() -> [Person] {
+        
+        var personsList: [Person] = []
+        
+        let names = DataStore().names.shuffled()
+        let surnames = DataStore().surnames.shuffled()
+        let emails = DataStore().emails.shuffled()
+        let phones = DataStore().phoneNumbers.shuffled()
+        
+        for item in 0..<names.count {
+            let person = Person(
+                name: names[item],
+                surname: surnames[item],
+                email: emails[item],
+                phoneNumber: phones[item]
+            )
+            personsList.append(person)
+        }
+        return personsList
     }
-
-//    func getRandomData(_ names: [String]) -> String {
-//        var names = DataStore().names
-//        var sortedNames: [String] = []
-//        var count = 0
-//
-//        for _ in names {
-//            count += 1
-//            sortedNames.append(names.randomElement() ?? "")
-//            names.remove(at: count)
-//        }
-//        return sortedNames
-//    }
 }
+
