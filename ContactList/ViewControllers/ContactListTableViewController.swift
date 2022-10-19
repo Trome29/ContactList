@@ -50,6 +50,6 @@ extension ContactListTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return personsList[section].title
+        personsList[section].title
     }
 }

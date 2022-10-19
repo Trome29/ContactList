@@ -22,7 +22,7 @@ class ContactTableViewController: UITableViewController {
 // MARK: - UITableViewDataSource
 extension ContactTableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return personsList.count
+        personsList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
