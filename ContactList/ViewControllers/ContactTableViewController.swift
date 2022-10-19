@@ -25,6 +25,17 @@ extension ContactTableViewController {
         personsList.count
     }
     
+    // Удаление свайпом
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let actionDelete = UIContextualAction(style: .destructive, title: "Удалить") { _,_,_ in
+            self.personsList.remove(at: indexPath.row)
+            tableView.reloadData()
+        }
+        let actions = UISwipeActionsConfiguration(actions: [actionDelete])
+        return actions
+    }
+
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "persons", for: indexPath)
         let person = personsList[indexPath.row]
