@@ -7,9 +7,13 @@
 
 import UIKit
 
-class ContactTableViewController: UITableViewController {
+class ContactViewController: UITableViewController {
     
     var personsList = Person.getPersonsList()
+    
+    override func viewDidLoad() {
+        tableView.rowHeight = 50
+    }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -20,21 +24,20 @@ class ContactTableViewController: UITableViewController {
 }
 
 // MARK: - UITableViewDataSource
-extension ContactTableViewController {
+extension ContactViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         personsList.count
     }
     
     // Удаление свайпом
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let actionDelete = UIContextualAction(style: .destructive, title: "Удалить") { _,_,_ in
+        let actionDelete = UIContextualAction(style: .destructive, title: "Delete") { _,_,_ in
             self.personsList.remove(at: indexPath.row)
             tableView.reloadData()
         }
         let actions = UISwipeActionsConfiguration(actions: [actionDelete])
         return actions
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "persons", for: indexPath)

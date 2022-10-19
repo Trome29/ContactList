@@ -7,20 +7,20 @@
 
 import UIKit
 
-class ContactListTableViewController: UITableViewController {
+class ContactListViewController: UITableViewController {
     
     private var personsList: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
-        guard let contactVC = tabBarController?.viewControllers?.first as? ContactTableViewController else { return }
+        guard let contactVC = tabBarController?.viewControllers?.first as? ContactViewController else { return }
         personsList = contactVC.personsList
     }
 }
 
 // MARK: - UITableViewDataSource
-extension ContactListTableViewController {
+extension ContactListViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         personsList.count
@@ -53,3 +53,4 @@ extension ContactListTableViewController {
         personsList[section].title
     }
 }
+

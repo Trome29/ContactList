@@ -13,8 +13,8 @@
 		301A720728FEDB8300F8C431 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301A720528FEDB8300F8C431 /* Main.storyboard */; };
 		301A720928FEDB8400F8C431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301A720828FEDB8400F8C431 /* Assets.xcassets */; };
 		301A720C28FEDB8400F8C431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301A720A28FEDB8400F8C431 /* LaunchScreen.storyboard */; };
-		301A721428FEE1BD00F8C431 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A721328FEE1BD00F8C431 /* ContactTableViewController.swift */; };
-		301A721628FEE2BE00F8C431 /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A721528FEE2BE00F8C431 /* ContactListTableViewController.swift */; };
+		301A721428FEE1BD00F8C431 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A721328FEE1BD00F8C431 /* ContactViewController.swift */; };
+		301A721628FEE2BE00F8C431 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A721528FEE2BE00F8C431 /* ContactListViewController.swift */; };
 		301A721D28FEE49200F8C431 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A721C28FEE49200F8C431 /* Person.swift */; };
 		301A722028FEE59D00F8C431 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A721F28FEE59D00F8C431 /* DataStore.swift */; };
 /* End PBXBuildFile section */
@@ -28,8 +28,8 @@
 		301A720828FEDB8400F8C431 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301A720B28FEDB8400F8C431 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		301A720D28FEDB8400F8C431 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		301A721328FEE1BD00F8C431 /* ContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
-		301A721528FEE2BE00F8C431 /* ContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
+		301A721328FEE1BD00F8C431 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		301A721528FEE2BE00F8C431 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		301A721C28FEE49200F8C431 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		301A721F28FEE59D00F8C431 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,8 +77,8 @@
 		301A721728FEE30600F8C431 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				301A721328FEE1BD00F8C431 /* ContactTableViewController.swift */,
-				301A721528FEE2BE00F8C431 /* ContactListTableViewController.swift */,
+				301A721328FEE1BD00F8C431 /* ContactViewController.swift */,
+				301A721528FEE2BE00F8C431 /* ContactListViewController.swift */,
 				301A720328FEDB8300F8C431 /* ContactDataViewController.swift */,
 			);
 			path = ViewControllers;
@@ -200,11 +200,11 @@
 			files = (
 				301A722028FEE59D00F8C431 /* DataStore.swift in Sources */,
 				301A721D28FEE49200F8C431 /* Person.swift in Sources */,
-				301A721428FEE1BD00F8C431 /* ContactTableViewController.swift in Sources */,
+				301A721428FEE1BD00F8C431 /* ContactViewController.swift in Sources */,
 				301A720428FEDB8300F8C431 /* ContactDataViewController.swift in Sources */,
 				301A720028FEDB8300F8C431 /* AppDelegate.swift in Sources */,
 				301A720228FEDB8300F8C431 /* SceneDelegate.swift in Sources */,
-				301A721628FEE2BE00F8C431 /* ContactListTableViewController.swift in Sources */,
+				301A721628FEE2BE00F8C431 /* ContactListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
