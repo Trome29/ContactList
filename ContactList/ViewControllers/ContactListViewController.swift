@@ -54,5 +54,9 @@ extension ContactListViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         personsList[section].title
     }
+    
+    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        personsList[section].profession
+    }
 }
 

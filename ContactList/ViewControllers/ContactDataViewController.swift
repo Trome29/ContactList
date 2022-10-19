@@ -11,6 +11,7 @@ class ContactDataViewController: UIViewController {
     
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
+    @IBOutlet var professionLabel: UILabel!
     
     var person: Person!
     
@@ -19,6 +20,7 @@ class ContactDataViewController: UIViewController {
         title = person.title
         phoneLabel.text = person.phoneNumber
         emailLabel.text = person.email
+        professionLabel.text = person.profession
     }
 }
 

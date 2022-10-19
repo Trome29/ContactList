@@ -63,6 +63,20 @@ class DataStore {
         "70001112233"
     ]
     
+    let professions =
+    [
+        "Engineer",
+        "Programmer",
+        "Accountant",
+        "Manager",
+        "Technician",
+        "Plumber",
+        "Teacher",
+        "Doctor",
+        "Fireman",
+        "Logistician"
+    ]
+    
 }
 
 
