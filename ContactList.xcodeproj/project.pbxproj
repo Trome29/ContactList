@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300A752C29001AF0003DA511 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300A752B29001AF0003DA511 /* TabBarViewController.swift */; };
 		301A720028FEDB8300F8C431 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A71FF28FEDB8300F8C431 /* AppDelegate.swift */; };
 		301A720228FEDB8300F8C431 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A720128FEDB8300F8C431 /* SceneDelegate.swift */; };
 		301A720428FEDB8300F8C431 /* ContactDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A720328FEDB8300F8C431 /* ContactDataViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300A752B29001AF0003DA511 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		301A71FC28FEDB8300F8C431 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		301A71FF28FEDB8300F8C431 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		301A720128FEDB8300F8C431 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +66,7 @@
 		301A71FE28FEDB8300F8C431 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				301A721B28FEE34000F8C431 /* Model */,
+				301A721B28FEE34000F8C431 /* Models */,
 				301A721728FEE30600F8C431 /* ViewControllers */,
 				301A721E28FEE58800F8C431 /* Services */,
 				301A721928FEE32D00F8C431 /* Storyboards */,
@@ -77,6 +79,7 @@
 		301A721728FEE30600F8C431 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				300A752B29001AF0003DA511 /* TabBarViewController.swift */,
 				301A721328FEE1BD00F8C431 /* ContactViewController.swift */,
 				301A721528FEE2BE00F8C431 /* ContactListViewController.swift */,
 				301A720328FEDB8300F8C431 /* ContactDataViewController.swift */,
@@ -111,12 +114,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		301A721B28FEE34000F8C431 /* Model */ = {
+		301A721B28FEE34000F8C431 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				301A721C28FEE49200F8C431 /* Person.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		301A721E28FEE58800F8C431 /* Services */ = {
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300A752C29001AF0003DA511 /* TabBarViewController.swift in Sources */,
 				301A722028FEE59D00F8C431 /* DataStore.swift in Sources */,
 				301A721D28FEE49200F8C431 /* Person.swift in Sources */,
 				301A721428FEE1BD00F8C431 /* ContactViewController.swift in Sources */,

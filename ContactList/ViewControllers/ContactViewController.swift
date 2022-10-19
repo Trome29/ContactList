@@ -9,10 +9,12 @@ import UIKit
 
 class ContactViewController: UITableViewController {
     
-    var personsList = Person.getPersonsList()
+    var personsList: [Person] = []
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         tableView.rowHeight = 50
+        navigationItem.leftBarButtonItem = editButtonItem
     }
     
     // MARK: - Navigation

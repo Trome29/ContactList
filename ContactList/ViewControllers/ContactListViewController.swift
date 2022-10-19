@@ -9,13 +9,11 @@ import UIKit
 
 class ContactListViewController: UITableViewController {
     
-     var personsList: [Person] = []
+    var personsList: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
-        guard let contactVC = tabBarController?.viewControllers?.first as? ContactViewController else { return }
-        personsList = contactVC.personsList
     }
 }
 
@@ -24,6 +22,10 @@ extension ContactListViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         personsList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
