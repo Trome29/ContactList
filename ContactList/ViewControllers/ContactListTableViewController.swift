@@ -14,8 +14,8 @@ class ContactListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 50
-        guard let contactListVC = tabBarController?.viewControllers?.first as? ContactTableViewController else { return }
-        personsList = contactListVC.personsList
+        guard let contactVC = tabBarController?.viewControllers?.first as? ContactTableViewController else { return }
+        personsList = contactVC.personsList
     }
 }
 
